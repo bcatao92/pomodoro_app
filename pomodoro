@@ -1,6 +1,8 @@
 import time
 import Application
+import janela_tempo
 from playsound import playsound
+
 
 
 tempo = float(input("Digite quantos minutos de foco deseja: "))
