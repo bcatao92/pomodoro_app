@@ -16,10 +16,13 @@ def tocar_som():
 
 def pomodoro(tempo):
     espera = tempo.get()                             #variavel para o tempo
-    #time.sleep(espera*60)
     if espera > 0:
         janela.after(espera*60*1000,tocar_som)
-    #tocar_som()
+    else:
+        tocar_som()
+
+
+
 
 img = icone.subsample(45,45)
 time_label = tk.Label(janela, text="Digite o tempo que deseja focar: ",font=("calibre",10,"bold"))
